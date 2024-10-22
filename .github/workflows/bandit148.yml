@@ -7,19 +7,14 @@ on:
 
 jobs:
   security-audit:
-    runs-on: ubuntu-latest  # Ensure the workflow runs on an up-to-date environment
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Use the latest version
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3  # Ensures Node.js 20 is used
-        with:
-          node-version: '20'
+        uses: actions/checkout@v3  # Use the latest version of checkout
 
       - name: Set up Python
-        uses: actions/setup-python@v4  # Keep using the latest version
+        uses: actions/setup-python@v4  # Use the latest version of Python setup
         with:
           python-version: '3.x'  # Specify your required Python version
 
@@ -30,4 +25,3 @@ jobs:
       - name: Run Bandit Security Linter
         run: |
           bandit -r ./  # Run Bandit to scan the repository
-
