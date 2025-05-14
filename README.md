@@ -32,7 +32,7 @@ By the end of this lab, I aimed to achieve the following:
 - GitHub Actions
 
 ---
- Here is the link to my Project report ![DevOps Report](MS_AppInnovation.md) 
+ Here is the link to my Project report [`DevOps Report`](MS_AppInnovation.md) 
 ##  Methodology
 
 ###  Exercise 1: Import the Vulnerable Code
